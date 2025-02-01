@@ -1,0 +1,120 @@
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: white;
+  --orange: #e28625;
+  --blue: #006971;
+  --green: #004140;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.columns {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1100px;
+  margin-top: 2rem;
+}
+
+.column {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+  border-radius: 2px;
+}
+
+.card {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  padding: 3em;
+  color: white;
+}
+
+.column:first-child .card{
+  border-top-left-radius:10px ;
+  border-bottom-left-radius:10px ;
+}
+
+.column:last-child .card{
+  border-top-right-radius:10px ;
+  border-bottom-right-radius:10px ;
+}
+
+.card-sedan {
+  background: var(--orange);
+}
+.card-suv {
+  background: var(--blue);
+}
+.card-luxury {
+  background: var(--green);
+}
+
+.card__img {
+  width: 75px;
+}
+
+.card__title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Bid_shoulders_display";
+}
+
+.card__description {
+  line-height: 2;
+  margin: 0;
+  margin-bottom: 4rem;
+  max-width: 35ch;
+}
+
+.card__cta {
+  margin: auto auto 0 0;
+  text-align: center;
+  background: var(--white);
+  color: var(--orange);
+  padding: 1em 2em;
+  border-radius: 25px;
+}
+
+.card__cta:hover {
+  background: none;
+  border: 1px solid var(--white);
+  color: var(--white);
+  border-radius: 25px;
+}
+
+@media (max-width: 500px) {
+  .columns{
+  flex-flow:column;}
+}
+
+@media (max-width: 700px) {
+
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1400px) {
+}
